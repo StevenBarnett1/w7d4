@@ -1,0 +1,38 @@
+.navbar {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 12% 40% 48%;
+    grid-template-areas: 
+    "navbar buttons" 
+    "title title"
+    ""
+    
+    ;
+
+
+}
+
+.navbar > h2 {
+    grid-area: navbar;
+}
+.buttons {
+    grid-area: buttons;
+}
+
+.title {
+    grid-area: title;
+}
+.search {
+    grid-area: search;
+}
+.date {
+    grid-area: date;
+}
+.guests {
+    grid-area: guests;
+}
+
+
+
+
+
