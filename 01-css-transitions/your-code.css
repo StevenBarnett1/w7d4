@@ -7,7 +7,9 @@
     /* your code here */
 }
 
-/* create rocket hover animation here */
+.rocket_svg:hover{
+    transform:rotate(250deg);
+}
 
 
 /* problem 2 */
@@ -19,7 +21,9 @@
     /* your code here */
 }
 
-/* create astronaut hover animation here */
+.astronaut_svg:hover{
+    transform: translateX(-100px);
+}
 
 
 /* BONUS */
@@ -27,9 +31,14 @@
     height: 200px;
     width: auto;
     margin-left: 300px;
-    /* your animation here */
+    animation:rotate 2s infinite
+    
 }
 
 @keyframes rotate {
-    /* set up your keyframe animation here */
+    from {
+        transform:rotate(0deg);
+    } to {
+        transform:rotate(360deg);
+    }
 }
