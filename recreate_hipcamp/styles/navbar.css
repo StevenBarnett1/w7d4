@@ -1,36 +1,61 @@
 .navbar {
     display: grid;
+    height: 573px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 12% 40% 48%;
     grid-template-areas: 
     "navbar buttons" 
     "title title"
-    ""
-    
+    "search search"
     ;
-
 
 }
 
 .navbar > h2 {
     grid-area: navbar;
+    margin: 0px;
 }
 .buttons {
     grid-area: buttons;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
 }
 
 .title {
     grid-area: title;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
 }
+.h1 {
+    margin: 0px;
+    font: 18px;
+    color: green;
+}
+
 .search {
     grid-area: search;
 }
-.date {
-    grid-area: date;
+
+.noborder {
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
 }
-.guests {
-    grid-area: guests;
+.noborder:hover{
+    text-decoration: underline;
+    text-decoration-color:lightgreen;
 }
+.border {
+    background-color:lightgreen;
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+
 
 
 
